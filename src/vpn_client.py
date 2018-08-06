@@ -22,7 +22,7 @@ def disableVPN(region):
 	consoleVPN("disable", region)
 
 def restartVPN():
-	region = config.readCurrentRegion()
+	region = config.readCurrentVPN()
 	stopVPN()
 	startVPN(region)
 
