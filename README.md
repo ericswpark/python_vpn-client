@@ -33,6 +33,6 @@ In the `dist` folder, there should be an ELF executable assuming you use Linux.
       --quit, -q            Stops the VPN.
       --restart, -r         Restarts the VPN.
       --change CHANGE_REGION, -c CHANGE_REGION
-                            Hot-swaps the VPN region.The region is NOT optional.
+                            Hot-swaps the VPN region. The region is NOT optional.
       --logs, -l            Shows VPN logs.
 
