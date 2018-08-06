@@ -15,7 +15,7 @@ Then, in the `vpn-client` directory, execute this command:
 
     pyinstaller --onefile src/main.py
 
-In the `dist` folder, there should be an ELF exectuable assuming you use Linux.
+In the `dist` folder, there should be an ELF executable assuming you use Linux.
 
 ## Usage
 
