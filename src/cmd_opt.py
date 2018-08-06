@@ -9,8 +9,7 @@ def get_parser():
 	commands = parser.add_mutually_exclusive_group()
 	commands.add_argument('--start', '-s',
 					action="store", dest="START_REGION",
-					help=("Start the VPN with the supplied region." +
-					"If no region is specified, the default one is used."))
+					help='Start the VPN with the supplied region.')
 					
 	commands.add_argument('--quit', '-q',
 					action="store_true",

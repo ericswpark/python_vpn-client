@@ -29,8 +29,7 @@ In the `dist` folder, there should be an ELF exectuable assuming you use Linux.
     optional arguments:
       -h, --help            show this help message and exit
       --start START_REGION, -s START_REGION
-                            Start the VPN with the supplied region.If no region is
-                            specified, the default one is used.
+                            Start the VPN with the supplied region.
       --quit, -q            Stops the VPN.
       --restart, -r         Restarts the VPN.
       --change CHANGE_REGION, -c CHANGE_REGION
