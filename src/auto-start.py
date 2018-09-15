@@ -2,4 +2,6 @@
 
 import main
 
-main.vpn_client.startVPN("LA")
+region = "LA"
+
+main.vpn_client.startVPN(region)
