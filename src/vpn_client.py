@@ -29,7 +29,10 @@ def restartVPN():
 def changeVPN(new_region):
 	stopVPN()
 	startVPN(new_region)
-	
-def logsVPN():
-	call(["watch", "-n", "1", "journalctl -u openvpn@{} | tail -n 10".format(config.readCurrentVPN())])
 
+def logsVPN():
+	try:
+		call(["watch", "-n", "1", "journalctl -u openvpn@{} | tail -n 10".format(config.readCurrentVPN())])
+	except:
+		pass
+	call(["stty", "sane"])
