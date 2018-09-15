@@ -21,7 +21,7 @@ def get_parser():
 					
 	commands.add_argument('--change', '-c',
 					action="store", dest="CHANGE_REGION",
-					help='Hot-swaps the VPN region. ' +
+					help='Hot-swaps the VPN region.' +
 					"The region is NOT optional.")
 					
 	commands.add_argument('--logs', '-l',
