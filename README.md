@@ -36,3 +36,16 @@ In the `dist` folder, there should be an ELF executable assuming you use Linux.
                             Hot-swaps the VPN region. The region is NOT optional.
       --logs, -l            Shows VPN logs.
 
+## Tips and tricks
+
+**Q: The script asks for my password every time I try to stop or start the VPN.**
+
+This is expected behavior. The script makes use of `systemctl`, and OpenVPN can only be run with the system-level systemd service. To modify system services, you need root permission.
+
+If you are OK with less security because the box is on a secure network, or if you're really confident with your security skills, you could modify the `sudoers` file with `sudo visudo` and tell `sudo` not to prompt you when you are running `systemctl` calls. Type the following line:
+
+    ideaman924 ALL=NOPASSWD: /bin/systemctl
+
+Replace `ideaman924` with your username, save, and exit.
+
+If it complains about syntax errors, your `systemctl` binary might be in a different location. Try `whereis systemctl` and substitute the correct directory name. For more information, I suggest [this AskUbuntu article.](https://askubuntu.com/questions/72267/how-to-allow-execution-without-prompting-for-password-using-sudo)
