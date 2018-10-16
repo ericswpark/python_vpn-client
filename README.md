@@ -42,7 +42,7 @@ In the `dist` folder, there should be an ELF executable assuming you use Linux.
 
 This is expected behavior. The script makes use of `systemctl`, and OpenVPN can only be run with the system-level systemd service. To modify system services, you need root permission.
 
-If you are OK with less security because the box is on a secure network, or if you're really confident with your security skills, you could modify the `sudoers` file with `sudo visudo` and tell `sudo` not to prompt you when you are running `systemctl` calls. Type the following line:
+If you are OK with less security because the box is on a secure network, or if you're really confident with your security skills, you could modify the `sudoers` file with `sudo visudo` and tell `sudo` not to prompt you when you are running `systemctl` calls. Type the following line at the end of the file:
 
     ideaman924 ALL=NOPASSWD: /bin/systemctl
 
