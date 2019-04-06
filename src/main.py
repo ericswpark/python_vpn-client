@@ -9,7 +9,7 @@ if __name__ == "__main__":
 
 
 	# VPN start
-	if args.START_REGION is not None:
+	if args.start is True:
 		print("Starting the VPN")
 		vpn_client.startVPN(args.START_REGION)
 	elif args.quit is True:
@@ -20,6 +20,9 @@ if __name__ == "__main__":
 		vpn_client.restartVPN()
 	elif args.logs is True:
 		vpn_client.logsVPN()
+	elif args.change is True:
+		vpn_client.stopVPN()
+		vpn_client.startVPN(args.CHANGE_REGION)
 	else:
 		print("Fatal error?")
 
