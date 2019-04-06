@@ -20,7 +20,7 @@ if __name__ == "__main__":
 		vpn_client.restartVPN()
 	elif args.logs is True:
 		vpn_client.logsVPN()
-	elif args.change is True:
+	elif args.CHANGE_REGION is not None:
 		vpn_client.stopVPN()
 		vpn_client.startVPN(args.CHANGE_REGION)
 	else:
