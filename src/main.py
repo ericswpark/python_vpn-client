@@ -9,7 +9,7 @@ if __name__ == "__main__":
 
 
 	# VPN start
-	if args.start is True:
+	if args.STARTING_REGION is not None:
 		print("Starting the VPN")
 		vpn_client.startVPN(args.START_REGION)
 	elif args.quit is True:
