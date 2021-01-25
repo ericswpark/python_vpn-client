@@ -44,8 +44,8 @@ This is expected behavior. The script makes use of `systemctl`, and OpenVPN can 
 
 If you are OK with less security because the box is on a secure network, or if you're really confident with your security skills, you could modify the `sudoers` file with `sudo visudo` and tell `sudo` not to prompt you when you are running `systemctl` calls. Type the following line at the end of the file:
 
-    ideaman924 ALL=NOPASSWD: /bin/systemctl
+    username ALL=NOPASSWD: /bin/systemctl
 
-Replace `ideaman924` with your username, save, and exit.
+Replace `username` with your username, save, and exit.
 
 If it complains about syntax errors, your `systemctl` binary might be in a different location. Try `whereis systemctl` and substitute the correct directory name. For more information, I suggest [this AskUbuntu article.](https://askubuntu.com/questions/72267/how-to-allow-execution-without-prompting-for-password-using-sudo)
