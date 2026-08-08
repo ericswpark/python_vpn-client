@@ -1,5 +1,13 @@
 # vpn-client
 
+## Archival notice
+
+Last published 2018, and I don't use OpenVPN anymore. This repository is kept up so that my blog doesn't have a dead link in it.
+
+Original README follows:
+
+---
+
 A Python script to help the use of a VPN client on a server!
 
 For more information, visit this link: [https://ericswpark.com/blog/2018/2018-05-01-set-up-a-network-wide-vpn-using-ubuntu-server/](https://ericswpark.com/blog/2018/2018-05-01-set-up-a-network-wide-vpn-using-ubuntu-server/)
